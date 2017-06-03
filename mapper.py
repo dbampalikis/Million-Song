@@ -4,11 +4,15 @@
 import sys
 
 #load()
+
+# New list
 similarList = []
+
+# Input comes from STDIN (standard input)
 for line in sys.stdin:
-	similarList.append(line.strip())
+	similarList.append(line.strip()) # append to list
+	
+# Print all elements in the list
 for similar in similarList:
 	print '%s\t%s' % (similar, 1)
-	#sys.stdout.write(similar+"\t"+"1")
-	#sys.stdout.write('%s\t%s' % (similar, 1))
-	#sys.stdout.write("test\tasd")
+	
